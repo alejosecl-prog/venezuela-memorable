@@ -141,6 +141,716 @@ nav a:hover {
 }
 
 .hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(52px, 8vw, 95px);
+    line-height: 0.9;
+    font-weight: 600;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: 28px auto;
+    font-size: 15px;
+}
+
+.divider {
+    width: 80px;
+    height: 2px;
+    background: #111111;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   EXPLORE
+========================= */
+
+.categories {
+    max-width: 1250px;
+    margin: 90px auto;
+    padding: 0 30px;
+}
+
+.categories-title {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #111111;
+    border-left: 1px solid #111111;
+}
+
+.category {
+    color: #111111;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 50px 25px;
+
+    border-right: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+}
+
+.category h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.category p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.category:hover {
+    background: #f3f3f3;
+}
+
+
+/* =========================
+   FEATURED ARTICLES
+========================= */
+
+.articles {
+    max-width: 1250px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    border-bottom: 2px solid #111111;
+
+    padding-bottom: 15px;
+}
+
+.articles-header h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+}
+
+.articles-header span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.article {
+    border-bottom: 1px solid #111111;
+    padding-bottom: 30px;
+}
+
+.article-image {
+    width: 100%;
+    height: 260px;
+
+    background: #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #111111;
+}
+
+.article-image span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.article-category {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.article h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 37px;
+    line-height: 1;
+    margin-top: 12px;
+}
+
+.article p {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+
+/* =========================
+   ARCHIVE
+========================= */
+
+.archive {
+    background: #111111;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 100px 30px;
+
+    margin-top: 120px;
+}
+
+.archive h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(60px, 9vw, 110px);
+    line-height: 0.9;
+}
+
+.archive .divider {
+    background: #ffffff;
+}
+
+.archive p {
+    max-width: 650px;
+    margin: 25px auto;
+    font-size: 14px;
+}
+
+.archive-button {
+    display: inline-block;
+
+    border: 1px solid #ffffff;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 13px 30px;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-top: 15px;
+}
+
+.archive-button:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 1px solid #111111;
+}
+
+.footer-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+.footer-motto {
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-top: 8px;
+}
+
+footer p {
+    font-size: 10px;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        padding-top: 35px;
+    }
+
+    .logo-title {
+        font-size: 65px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .hero {
+        margin: 40px auto;
+        padding: 0 18px;
+    }
+
+    .hero-image {
+        height: 330px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .articles,
+    .categories {
+        padding: 0 18px;
+    }
+
+    .articles-header {
+        display: block;
+    }
+
+    .articles-header span {
+        display: block;
+        margin-top: 8px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="motto">
+A Cultural Archive
+</div>
+
+<div class="logo-title">
+Step Forward
+</div>
+
+<div class="subtitle">
+History · Culture · People · Ideas
+</div>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">History</a>
+
+<a href="#">People</a>
+
+<a href="#">Places</a>
+
+<a href="#">Culture</a>
+
+<a href="#">Ideas</a>
+
+<a href="#">Archive</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-image"></div>
+
+<div class="hero-content">
+
+<div class="section-label">
+Step Forward
+</div>
+
+<h1>
+The Past<br>
+Shapes the Future.
+</h1>
+
+<div class="divider"></div>
+
+<p>
+Step Forward is an independent cultural archive dedicated to history,
+culture, remarkable people, places and the ideas that have shaped our world.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- EXPLORE -->
+
+<section class="categories">
+
+<h2 class="categories-title">
+Explore
+</h2>
+
+
+<div class="category-grid">
+
+
+<a href="#" class="category">
+
+<h2>History</h2>
+
+<p>
+Events, civilizations and turning points.
+</p>
+
+</a>
+
+
+<a href="#" class="category">
+
+<h2>People</h2>
+
+<p>
+The lives that changed the course of history.
+</p>
+
+</a>
+
+
+<a href="#" class="category">
+
+<h2>Culture</h2>
+
+<p>
+Art, literature, traditions and heritage.
+</p>
+
+</a>
+
+
+<a href="#" class="category">
+
+<h2>Places</h2>
+
+<p>
+Cities, monuments and landscapes.
+</p>
+
+</a>
+
+
+<a href="#" class="category">
+
+<h2>Ideas</h2>
+
+<p>
+Ideas that transformed societies.
+</p>
+
+</a>
+
+
+<a href="#" class="category">
+
+<h2>Archive</h2>
+
+<p>
+Documents, images and historical records.
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- FEATURED -->
+
+<section class="articles">
+
+
+<div class="articles-header">
+
+<h2>
+Featured
+</h2>
+
+<span>
+From the Archive
+</span>
+
+</div>
+
+
+<div class="article-grid">
+
+
+<article class="article">
+
+<div class="article-image">
+
+<span>
+HISTORY
+</span>
+
+</div>
+
+<div class="article-category">
+History
+</div>
+
+<h3>
+Civilizations That Changed the World
+</h3>
+
+<p>
+Stories of societies, empires and cultures whose legacy continues to shape
+the modern world.
+</p>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-image">
+
+<span>
+PEOPLE
+</span>
+
+</div>
+
+<div class="article-category">
+People
+</div>
+
+<h3>
+The Lives Behind History
+</h3>
+
+<p>
+Portraits of thinkers, artists, leaders and extraordinary individuals.
+</p>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-image">
+
+<span>
+CULTURE
+</span>
+
+</div>
+
+<div class="article-category">
+Culture
+</div>
+
+<h3>
+The Memory of a Civilization
+</h3>
+
+<p>
+Art, architecture, traditions and ideas preserved across generations.
+</p>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- ARCHIVE -->
+
+<section class="archive">
+
+<h2>
+The Archive
+</h2>
+
+<div class="divider"></div>
+
+<p>
+Explore a growing collection of historical documents, images,
+stories and cultural references from around the world.
+</p>
+
+<a href="#" class="archive-button">
+Enter the Archive
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-title">
+STEP FORWARD
+</div>
+
+<div class="footer-motto">
+AD ALTIORA SEMPER
+</div>
+
+<p>
+© 2026 Step Forward · History · Culture · Ideas
+</p>
+
+</footer>
+
+
+</body>
+
+</html>body {
+    background: #ffffff;
+    color: #111111;
+    font-family: "Libre Baskerville", serif;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding: 45px 20px 30px;
+    border-bottom: 1px solid #111111;
+}
+
+.motto {
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.logo-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(60px, 11vw, 125px);
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #111111;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1250px;
+    margin: 65px auto;
+    padding: 0 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+
+    background-image: url("logo.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #111111;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
        border-bottom: 1px solid #111;
     text-align: center;
     padding: 35px 20px 25px;
