@@ -2,19 +2,31 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Step Forward — History, Culture & Ideas</title>
 
-<meta name="description" content="Step Forward — a cultural archive dedicated to history, culture, people, places and ideas.">
+<meta name="description"
+content="Step Forward is an independent cultural archive dedicated to history, culture, people, places and ideas.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+rel="stylesheet">
+
 
 <style>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
 
 * {
     box-sizing: border-box;
@@ -29,12 +41,107 @@ body {
     line-height: 1.7;
 }
 
+
 /* =========================
    HEADER
 ========================= */
 
 header {
-    border-bottom: 1px solid #111;
+    text-align: center;
+    padding: 45px 20px 30px;
+    border-bottom: 1px solid #111111;
+}
+
+.motto {
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.logo-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(60px, 11vw, 125px);
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #111111;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1250px;
+    margin: 65px auto;
+    padding: 0 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+
+    background-image: url("logo.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #111111;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+       border-bottom: 1px solid #111;
     text-align: center;
     padding: 35px 20px 25px;
 }
