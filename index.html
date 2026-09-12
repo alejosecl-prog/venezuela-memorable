@@ -1,1347 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Venezuela Memorable — History, Culture & Heritage</title>
-
-  <meta
-    name="description"
-    content="Venezuela Memorable is a digital cultural platform dedicated to history, heritage, literature, personalities and places."
-  >
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <style>
-    :root {
-      --paper: #f5f2eb;
-      --paper-dark: #e9e4da;
-      --ink: #181818;
-      --muted: #77736b;
-      --line: #cfc8bc;
-      --red: #9e252b;
-      --white: #ffffff;
-      --serif: "Cormorant Garamond", Georgia, serif;
-      --sans: "Inter", Arial, sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    button,
-    input,
-    select {
-      font: inherit;
-    }
-
-    .container {
-      width: min(1180px, 92%);
-      margin: 0 auto;
-    }
-
-    .eyebrow {
-      color: var(--red);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .section-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 20px;
-      margin-bottom: 28px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .section-heading h2 {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      font-weight: 600;
-      line-height: 1;
-    }
-
-    .section-heading p {
-      max-width: 420px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .button {
-      display: inline-block;
-      border: 1px solid var(--ink);
-      padding: 11px 18px;
-      background: transparent;
-      color: var(--ink);
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .button:hover {
-      background: var(--ink);
-      color: var(--white);
-    }
-
-    .button-red {
-      border-color: var(--red);
-      background: var(--red);
-      color: var(--white);
-    }
-
-    .button-red:hover {
-      background: #741b20;
-      border-color: #741b20;
-    }
-
-    /* HEADER */
-
-    .topbar {
-      border-bottom: 1px solid var(--line);
-      padding: 12px 0;
-      color: var(--muted);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .topbar-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    header {
-      background: var(--paper);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .brand {
-      padding: 34px 0 28px;
-      text-align: center;
-    }
-
-    .brand h1 {
-      font-family: var(--serif);
-      font-size: clamp(3rem, 8vw, 6.8rem);
-      font-weight: 600;
-      letter-spacing: -0.04em;
-      line-height: 0.9;
-    }
-
-    .brand p {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.23em;
-      text-transform: uppercase;
-    }
-
-    nav {
-      border-top: 1px solid var(--line);
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0;
-    }
-
-    .nav-inner a {
-      padding: 15px 18px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: 0.2s ease;
-    }
-
-    .nav-inner a:hover {
-      background: var(--ink);
-      color: var(--white);
-    }
-
-    /* HERO */
-
-    .hero {
-      padding: 54px 0 70px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 35px;
-      align-items: stretch;
-    }
-
-    .hero-main {
-      min-height: 490px;
-      padding: 35px;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      background:
-        linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.82),
-          rgba(0, 0, 0, 0.05)
-        ),
-        url("https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1400&q=85")
-        center/cover;
-      color: var(--white);
-    }
-
-    .hero-main .eyebrow {
-      color: #e4a2a5;
-    }
-
-    .hero-main h2 {
-      max-width: 720px;
-      margin: 15px 0;
-      font-family: var(--serif);
-      font-size: clamp(2.6rem, 5vw, 5.2rem);
-      font-weight: 500;
-      line-height: 0.95;
-    }
-
-    .hero-main p {
-      max-width: 600px;
-      color: #e7e7e7;
-      font-size: 0.95rem;
-    }
-
-    .hero-side {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .side-story {
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
-    }
-
-    .side-story h3 {
-      margin: 8px 0;
-      font-family: var(--serif);
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 1;
-    }
-
-    .side-story p {
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 70px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .article-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .article-card {
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 22px;
-    }
-
-    .article-image {
-      height: 220px;
-      margin-bottom: 18px;
-      background: var(--paper-dark);
-      overflow: hidden;
-    }
-
-    .article-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(100%);
-      transition: 0.3s ease;
-    }
-
-    .article-card:hover img {
-      filter: grayscale(0%);
-      transform: scale(1.03);
-    }
-
-    .article-card h3 {
-      margin: 10px 0;
-      font-family: var(--serif);
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 1;
-    }
-
-    .article-card p {
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
-    .article-meta {
-      color: var(--muted);
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    /* ARCHIVE */
-
-    .archive-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-    }
-
-    .archive-list {
-      list-style: none;
-    }
-
-    .archive-list li {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 15px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .archive-list a {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    .archive-list span {
-      color: var(--muted);
-      font-size: 0.75rem;
-    }
-
-    /* CATALOGS */
-
-    .catalog-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .catalog-card {
-      min-height: 230px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      border: 1px solid var(--line);
-      background: var(--paper-dark);
-      transition: 0.2s ease;
-    }
-
-    .catalog-card:hover {
-      background: var(--ink);
-      color: var(--white);
-    }
-
-    .catalog-card h3 {
-      margin: 10px 0;
-      font-family: var(--serif);
-      font-size: 2rem;
-      line-height: 1;
-    }
-
-    .catalog-card p {
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-
-    .catalog-card:hover p {
-      color: #d8d8d8;
-    }
-
-    /* LIBRARY */
-
-    .library-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-    }
-
-    .library-box {
-      border: 1px solid var(--line);
-      padding: 30px;
-    }
-
-    .library-box h3 {
-      margin: 12px 0;
-      font-family: var(--serif);
-      font-size: 2.4rem;
-      line-height: 1;
-    }
-
-    .library-box p {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    /* SEARCH */
-
-    .search-area {
-      padding: 35px;
-      background: var(--ink);
-      color: var(--white);
-    }
-
-    .search-area h2 {
-      margin-bottom: 15px;
-      font-family: var(--serif);
-      font-size: 2.8rem;
-      font-weight: 500;
-    }
-
-    .search-form {
-      display: flex;
-      gap: 10px;
-    }
-
-    .search-form input {
-      width: 100%;
-      border: 1px solid #555;
-      padding: 14px;
-      background: #252525;
-      color: var(--white);
-      outline: none;
-    }
-
-    .search-form input:focus {
-      border-color: #ffffff;
-    }
-
-    .search-results {
-      margin-top: 20px;
-    }
-
-    .search-result {
-      padding: 12px 0;
-      border-bottom: 1px solid #444;
-    }
-
-    .search-result strong {
-      display: block;
-      font-family: var(--serif);
-      font-size: 1.5rem;
-    }
-
-    .search-result span {
-      color: #bdbdbd;
-      font-size: 0.8rem;
-    }
-
-    /* PRODUCTS */
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .product-card {
-      border: 1px solid var(--line);
-      background: var(--white);
-    }
-
-    .product-cover {
-      height: 260px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-      background: #ded8cc;
-      text-align: center;
-    }
-
-    .product-cover h3 {
-      font-family: var(--serif);
-      font-size: 2.4rem;
-      line-height: 0.95;
-    }
-
-    .product-info {
-      padding: 22px;
-    }
-
-    .product-info h3 {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      line-height: 1;
-    }
-
-    .product-info p {
-      margin: 10px 0 18px;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    /* NEWSLETTER */
-
-    .newsletter {
-      background: var(--red);
-      color: var(--white);
-      padding: 50px;
-      text-align: center;
-    }
-
-    .newsletter h2 {
-      font-family: var(--serif);
-      font-size: 3rem;
-      font-weight: 500;
-      line-height: 1;
-    }
-
-    .newsletter p {
-      max-width: 580px;
-      margin: 15px auto 25px;
-      color: #f4dfe0;
-    }
-
-    .newsletter .button {
-      border-color: var(--white);
-      color: var(--white);
-    }
-
-    .newsletter .button:hover {
-      background: var(--white);
-      color: var(--red);
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 45px 0;
-      background: var(--ink);
-      color: var(--white);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-    }
-
-    footer h3 {
-      margin-bottom: 12px;
-      font-family: var(--serif);
-      font-size: 2rem;
-      font-weight: 500;
-    }
-
-    footer p,
-    footer a {
-      color: #bdbdbd;
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      display: block;
-      margin-bottom: 7px;
-    }
-
-    footer a:hover {
-      color: var(--white);
-    }
-
-    .copyright {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid #444;
-      color: #888;
-      font-size: 0.7rem;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 900px) {
-      .hero-grid,
-      .archive-layout,
-      .library-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .article-grid,
-      .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .catalog-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero-main {
-        min-height: 420px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .topbar-inner {
-        flex-direction: column;
-        gap: 4px;
-      }
-
-      .brand {
-        padding: 25px 0;
-      }
-
-      .nav-inner {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .nav-inner a {
-        border-bottom: 1px solid var(--line);
-        text-align: center;
-        padding: 12px 5px;
-        font-size: 0.65rem;
-      }
-
-      .hero {
-        padding: 30px 0 45px;
-      }
-
-      .hero-main {
-        min-height: 390px;
-        padding: 25px;
-      }
-
-      .article-grid,
-      .catalog-grid,
-      .products-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-heading {
-        display: block;
-      }
-
-      .section-heading p {
-        margin-top: 15px;
-      }
-
-      .search-area,
-      .newsletter {
-        padding: 28px 20px;
-      }
-
-      .search-form {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span>History · Culture · Heritage</span>
-      <span>Venezuela and the World</span>
-    </div>
+<title>Venezuela Memorable — Historia, Cultura y Patrimonio</title>
+
+<meta
+  name="description"
+  content="Venezuela Memorable es una plataforma cultural digital dedicada a la historia, el patrimonio, la literatura, las personalidades y los lugares de Venezuela."
+><div class="topbar">
+  <div class="container topbar-inner">
+    <span>Historia · Cultura · Patrimonio</span>
+    <span>Venezuela y el mundo</span>
+  </div>
+</div><header>
+  <div class="container brand">
+    <h1>Venezuela Memorable</h1>
+    <p>Revista digital de cultura venezolana</p>
   </div>
 
-  <header>
-    <div class="container brand">
-      <h1>Venezuela Memorable</h1>
-      <p>A digital cultural archive</p>
+  <nav>
+    <div class="container nav-inner">
+      <a href="#revista">Revista</a>
+      <a href="#archivo">Archivo</a>
+      <a href="#biblioteca">Biblioteca</a>
+      <a href="#catalogos">Catálogos</a>
+      <a href="#buscar">Buscar</a>
+      <a href="#tienda">Tienda editorial</a>
+      <a href="#nosotros">Nosotros</a>
     </div>
-
-    <nav>
-      <div class="container nav-inner">
-        <a href="#journal">Journal</a>
-        <a href="#archive">Archive</a>
-        <a href="#library">Library</a>
-        <a href="#catalogs">Catalogues</a>
-        <a href="#search">Search</a>
-        <a href="#shop">Editorial Shop</a>
-        <a href="#about">About</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- FEATURED STORY -->
-
-    <section class="hero" id="journal">
-      <div class="container hero-grid">
-
-        <article class="hero-main">
-          <div class="eyebrow">Featured Essay</div>
-
-          <h2>
-            The memory of a country is built through its stories.
-          </h2>
-
-          <p>
-            Historical essays, cultural investigations and forgotten
-            documents about Venezuela and its people.
-          </p>
-        </article>
-
-        <div class="hero-side">
-
-          <article class="side-story">
-            <div class="eyebrow">History</div>
-            <h3>The cities that shaped Venezuela</h3>
-            <p>
-              An exploration of urban memory, architecture and historical
-              transformation.
-            </p>
-          </article>
-
-          <article class="side-story">
-            <div class="eyebrow">Culture</div>
-            <h3>Tradition, identity and modernity</h3>
-            <p>
-              Reflections on the cultural expressions that define a nation.
-            </p>
-          </article>
-
-          <article class="side-story">
-            <div class="eyebrow">Archive</div>
-            <h3>Documents from another time</h3>
-            <p>
-              Photographs, newspapers, books, maps and historical records.
-            </p>
-          </article>
-
-          <a class="button" href="#archive">
-            Explore the archive
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- LATEST ARTICLES -->
-
-    <section>
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">The Journal</div>
-            <h2>Latest publications</h2>
-          </div>
-
-          <p>
-            Essays and articles dedicated to history, culture, personalities,
-            architecture and national memory.
-          </p>
-        </div>
-
-        <div class="article-grid">
-
-          <article class="article-card">
-            <div class="article-image">
-              <img
-                src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=900&q=80"
-                alt="Historic architecture"
-              >
-            </div>
-
-            <div class="article-meta">History · Essay</div>
-
-            <h3>
-              The historical formation of Caracas
-            </h3>
-
-            <p>
-              A study of the origins, transformations and cultural memory
-              of the Venezuelan capital.
-            </p>
-
-            <br>
-
-            <a class="button" href="#">
-              Read article
-            </a>
-          </article>
-
-          <article class="article-card">
-            <div class="article-image">
-              <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
-                alt="Mountain landscape"
-              >
-            </div>
-
-            <div class="article-meta">Places · Heritage</div>
-
-            <h3>
-              Landscapes of memory
-            </h3>
-
-            <p>
-              Venezuelan places that preserve the historical identity
-              of their communities.
-            </p>
-
-            <br>
-
-            <a class="button" href="#">
-              Read article
-            </a>
-          </article>
-
-          <article class="article-card">
-            <div class="article-image">
-              <img
-                src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=80"
-                alt="Old books in a library"
-              >
-            </div>
-
-            <div class="article-meta">Library · Documents</div>
-
-            <h3>
-              Books that explain a nation
-            </h3>
-
-            <p>
-              A selection of essential books for understanding Venezuelan
-              history and culture.
-            </p>
-
-            <br>
-
-            <a class="button" href="#">
-              Read article
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ARCHIVE -->
-
-    <section id="archive">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Historical Memory</div>
-            <h2>The archive</h2>
-          </div>
-
-          <p>
-            A growing repository of historical articles, photographs,
-            documents, maps and cultural references.
-          </p>
-        </div>
-
-        <div class="archive-layout">
-
-          <div>
-            <div class="eyebrow">Browse by subject</div>
-
-            <ul class="archive-list">
-              <li>
-                <a href="#">Political history</a>
-                <span>12 entries</span>
-              </li>
-
-              <li>
-                <a href="#">Cultural history</a>
-                <span>18 entries</span>
-              </li>
-
-              <li>
-                <a href="#">Architecture</a>
-                <span>9 entries</span>
-              </li>
-
-              <li>
-                <a href="#">Literature</a>
-                <span>7 entries</span>
-              </li>
-
-              <li>
-                <a href="#">Photography</a>
-                <span>15 entries</span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="eyebrow">Browse by period</div>
-
-            <ul class="archive-list">
-              <li>
-                <a href="#">Pre-Hispanic Venezuela</a>
-                <span>Period I</span>
-              </li>
-
-              <li>
-                <a href="#">Colonial Venezuela</a>
-                <span>Period II</span>
-              </li>
-
-              <li>
-                <a href="#">Independence</a>
-                <span>Period III</span>
-              </li>
-
-              <li>
-                <a href="#">19th Century</a>
-                <span>Period IV</span>
-              </li>
-
-              <li>
-                <a href="#">20th Century</a>
-                <span>Period V</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- LIBRARY -->
-
-    <section id="library">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Knowledge Repository</div>
-            <h2>The library</h2>
-          </div>
-
-          <p>
-            A curated collection of books, essays, newspapers, documents
-            and bibliographic references.
-          </p>
-        </div>
-
-        <div class="library-layout">
-
-          <div class="library-box">
-            <div class="eyebrow">Books</div>
-            <h3>Bibliographic collection</h3>
-            <p>
-              Books about Venezuelan history, literature, politics,
-              architecture, art and cultural identity.
-            </p>
-
-            <br>
-
-            <a class="button" href="#">
-              Browse books
-            </a>
-          </div>
-
-          <div class="library-box">
-            <div class="eyebrow">Documents</div>
-            <h3>Digital documents</h3>
-            <p>
-              Historical newspapers, manuscripts, photographs, maps,
-              catalogues and public-domain materials.
-            </p>
-
-            <br>
-
-            <a class="button" href="#">
-              Browse documents
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CATALOGUES -->
-
-    <section id="catalogs">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Reference Catalogue</div>
-            <h2>People and places</h2>
-          </div>
-
-          <p>
-            A structured catalogue of the people, cities, buildings and
-            locations that form the historical imagination of Venezuela.
-          </p>
-        </div>
-
-        <div class="catalog-grid">
-
-          <a class="catalog-card" href="#">
-            <div class="eyebrow">Catalogue I</div>
-            <h3>Historical figures</h3>
-            <p>
-              Politicians, writers, artists, thinkers, military figures
-              and cultural personalities.
-            </p>
-          </a>
-
-          <a class="catalog-card" href="#">
-            <div class="eyebrow">Catalogue II</div>
-            <h3>Writers and artists</h3>
-            <p>
-              Literary, artistic and intellectual figures.
-            </p>
-          </a>
-
-          <a class="catalog-card" href="#">
-            <div class="eyebrow">Catalogue III</div>
-            <h3>Cities and places</h3>
-            <p>
-              Cities, towns, landscapes and historical locations.
-            </p>
-          </a>
-
-          <a class="catalog-card" href="#">
-            <div class="eyebrow">Catalogue IV</div>
-            <h3>Buildings and heritage</h3>
-            <p>
-              Monuments, churches, palaces, museums and historic buildings.
-            </p>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SEARCH -->
-
-    <section id="search">
-      <div class="container">
-
-        <div class="search-area">
-          <div class="eyebrow">Research Tool</div>
-
-          <h2>Search the collection</h2>
-
-          <p>
-            Search through articles, people, places, books and historical
-            subjects.
-          </p>
-
-          <br>
-
-          <form class="search-form" id="searchForm">
-            <input
-              type="search"
-              id="searchInput"
-              placeholder="Search for Bolívar, Caracas, architecture..."
-              aria-label="Search the collection"
-            >
-
-            <button class="button button-red" type="submit">
-              Search
-            </button>
-          </form>
-
-          <div class="search-results" id="searchResults"></div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PRODUCTS -->
-
-    <section id="shop">
-      <div class="container">
-
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow">Editorial Shop</div>
-            <h2>Editorial products</h2>
-          </div>
-
-          <p>
-            Books, digital editions, special dossiers, posters and other
-            products created by Venezuela Memorable.
-          </p>
-        </div>
-
-        <div class="products-grid">
-
-          <article class="product-card">
-            <div class="product-cover">
-              <h3>
-                Venezuela<br>
-                Memorable<br>
-                No. 01
-              </h3>
-            </div>
-
-            <div class="product-info">
-              <div class="eyebrow">Digital Edition</div>
-              <h3>First editorial issue</h3>
-              <p>
-                A digital collection of essays and historical images.
-              </p>
-
-              <a class="button" href="#">
-                View product
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-cover">
-              <h3>
-                Historical<br>
-                Dossiers
-              </h3>
-            </div>
-
-            <div class="product-info">
-              <div class="eyebrow">Research Series</div>
-              <h3>Special dossiers</h3>
-              <p>
-                In-depth publications dedicated to specific historical topics.
-              </p>
-
-              <a class="button" href="#">
-                View product
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-cover">
-              <h3>
-                Maps &<br>
-                Memory
-              </h3>
-            </div>
-
-            <div class="product-info">
-              <div class="eyebrow">Visual Collection</div>
-              <h3>Historical prints</h3>
-              <p>
-                Maps, illustrations and editorial posters.
-              </p>
-
-              <a class="button" href="#">
-                View product
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <section id="about">
-      <div class="container">
-
-        <div class="newsletter">
-          <div class="eyebrow">Venezuela Memorable</div>
-
-          <h2>
-            Preserving the past.<br>
-            Understanding the present.
-          </h2>
-
-          <p>
-            Venezuela Memorable is a digital cultural platform dedicated
-            to the study, preservation and dissemination of Venezuelan
-            history, culture and heritage.
-          </p>
-
-          <a class="button" href="#">
-            Discover the project
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-
-  <footer>
-    <div class="container">
-
-      <div class="footer-grid">
-
-        <div>
-          <h3>Venezuela Memorable</h3>
-
-          <p>
-            A digital journal, archive and library dedicated to Venezuela's
-            historical and cultural memory.
-          </p>
-        </div>
-
-        <div>
-          <h3>Explore</h3>
-
-          <a href="#journal">Journal</a>
-          <a href="#archive">Archive</a>
-          <a href="#library">Library</a>
-          <a href="#catalogs">Catalogues</a>
-        </div>
-
-        <div>
-          <h3>Connect</h3>
-
-          <a href="#">Instagram</a>
-          <a href="#">TikTok</a>
-          <a href="#">X / Twitter</a>
-          <a href="#">Substack</a>
-        </div>
-
-      </div>
-
-      <div class="copyright">
-        © 2026 Venezuela Memorable. All rights reserved.
-      </div>
+  </nav>
+</header><section class="hero" id="revista">
+  <div class="container hero-grid">
+
+    <article class="hero-main">
+      <div class="eyebrow">Ensayo destacado</div>
+
+      <h2>
+        La memoria de un país se construye a través de sus historias.
+      </h2>
+
+      <p>
+        Ensayos históricos, investigaciones culturales y documentos
+        olvidados sobre Venezuela y sus habitantes.
+      </p>
+    </article>
+
+    <div class="hero-side">
+
+      <article class="side-story">
+        <div class="eyebrow">Historia</div>
+        <h3>Las ciudades que dieron forma a Venezuela</h3>
+        <p>
+          Una aproximación a la memoria urbana, la arquitectura y las
+          transformaciones históricas del país.
+        </p>
+      </article>
+
+      <article class="side-story">
+        <div class="eyebrow">Cultura</div>
+        <h3>Tradición, identidad y modernidad</h3>
+        <p>
+          Reflexiones sobre las expresiones culturales que definen
+          a una nación.
+        </p>
+      </article>
+
+      <article class="side-story">
+        <div class="eyebrow">Archivo</div>
+        <h3>Documentos de otro tiempo</h3>
+        <p>
+          Fotografías, periódicos, libros, mapas y registros históricos.
+        </p>
+      </article>
+
+      <a class="button" href="#archivo">
+        Explorar el archivo
+      </a>
 
     </div>
-  </footer>
+  </div>
+</section>
+<section id="publicaciones">
+  <div class="container">
 
-  <script>
-    const collection = [
-      {
-        title: "The historical formation of Caracas",
-        category: "Article",
-        keywords: "caracas history city architecture"
-      },
-      {
-        title: "Simón Bolívar",
-        category: "Historical figure",
-        keywords: "bolivar independence politics military"
-      },
-      {
-        title: "Arturo Michelena",
-        category: "Artist",
-        keywords: "arturo michelena painting art culture"
-      },
-      {
-        title: "Colonial Venezuela",
-        category: "Historical period",
-        keywords: "colonial history spain architecture"
-      },
-      {
-        title: "Historical architecture of Venezuela",
-        category: "Heritage",
-        keywords: "architecture buildings churches palaces heritage"
-      },
-      {
-        title: "Venezuelan literature",
-        category: "Library",
-        keywords: "books literature writers essays"
-      },
-      {
-        title: "Ciudad Bolívar",
-        category: "Place",
-        keywords: "ciudad bolivar orinoco city heritage"
-      },
-      {
-        title: "El Cojo Ilustrado",
-        category: "Document",
-        keywords: "el cojo ilustrado magazine photography documents"
-      }
-    ];
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">La revista</div>
+        <h2>Últimas publicaciones</h2>
+      </div>
 
-    const searchForm = document.getElementById("searchForm");
-    const searchInput = document.getElementById("searchInput");
-    const searchResults = document.getElementById("searchResults");
+      <p>
+        Ensayos y artículos dedicados a la historia, la cultura,
+        las personalidades, la arquitectura y la memoria nacional.
+      </p>
+    </div>
 
-    searchForm.addEventListener("submit", function(event) {
-      event.preventDefault();
+    <div class="article-grid">
 
-      const query = searchInput.value.toLowerCase().trim();
+      <article class="article-card">
+        <div class="article-image">
+          <img
+            src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=900&q=80"
+            alt="Arquitectura histórica"
+          >
+        </div>
 
-      if (!query) {
-        searchResults.innerHTML =
-          "<p>Please enter a search term.</p>";
-        return;
-      }
+        <div class="article-meta">Historia · Ensayo</div>
 
-      const results = collection.filter(item => {
-        return (
-          item.title.toLowerCase().includes(query) ||
-          item.category.toLowerCase().includes(query) ||
-          item.keywords.toLowerCase().includes(query)
-        );
-      });
+        <h3>
+          La formación histórica de Caracas
+        </h3>
 
-      if (results.length === 0) {
-        searchResults.innerHTML =
-          "<p>No results found in the collection.</p>";
-        return;
-      }
+        <p>
+          Un estudio sobre los orígenes, las transformaciones y la memoria
+          cultural de la capital venezolana.
+        </p>
 
-      searchResults.innerHTML = results.map(item => {
-        return `
-          <div class="search-result">
-            <strong>${item.title}</strong>
-            <span>${item.category}</span>
-          </div>
-        `;
-      }).join("");
-    });
-  </script>
+        <br>
 
-</body>
-</html>
+        <a class="button" href="#">
+          Leer artículo
+        </a>
+      </article>
+
+      <article class="article-card">
+        <div class="article-image">
+          <img
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
+            alt="Paisaje montañoso"
+          >
+        </div>
+
+        <div class="article-meta">Lugares · Patrimonio</div>
+
+        <h3>
+          Paisajes de la memoria
+        </h3>
+
+        <p>
+          Lugares venezolanos que conservan la identidad histórica
+          de sus comunidades.
+        </p>
+
+        <br>
+
+        <a class="button" href="#">
+          Leer artículo
+        </a>
+      </article>
+
+      <article class="article-card">
+        <div class="article-image">
+          <img
+            src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=80"
+            alt="Libros antiguos en una biblioteca"
+          >
+        </div>
+
+        <div class="article-meta">Biblioteca · Documentos</div>
+
+        <h3>
+          Libros para comprender una nación
+        </h3>
+
+        <p>
+          Una selección de obras fundamentales para comprender
+          la historia y la cultura venezolana.
+        </p>
+
+        <br>
+
+        <a class="button" href="#">
+          Leer artículo
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
