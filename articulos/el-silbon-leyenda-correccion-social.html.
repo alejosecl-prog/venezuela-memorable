@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>El Silbón como leyenda de corrección social | Venezuela Memorable</title>
+
+  <meta name="description" content="Una aproximación al Silbón como figura del imaginario llanero venezolano y como leyenda de corrección social.">
+
+  <meta name="author" content="Valeria Naveda">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #171717;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .cabecera {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 30px;
+      border-bottom: 1px solid #d8d8d8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .marca {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .volver {
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .contenedor {
+      max-width: 850px;
+      margin: 65px auto;
+      padding: 0 25px;
+    }
+
+    .categoria {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      font-weight: normal;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin: 20px 0 15px;
+    }
+
+    .subtitulo {
+      font-size: 23px;
+      color: #666;
+      margin: 0 0 30px;
+      line-height: 1.4;
+    }
+
+    .firma {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .fecha {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 40px;
+    }
+
+    figure {
+      margin: 0 0 45px;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      max-width: 550px;
+      margin: 15px auto 0;
+      text-align: center;
+      color: #777;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .contenido {
+      font-size: 19px;
+      text-align: justify;
+    }
+
+    .contenido p {
+      margin: 0 0 25px;
+    }
+
+    .contenido h2 {
+      font-size: 30px;
+      font-weight: normal;
+      line-height: 1.2;
+      margin: 45px 0 20px;
+    }
+
+    blockquote {
+      border-left: 2px solid #888;
+      margin: 35px 0;
+      padding: 5px 25px;
+      color: #555;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    .silbido {
+      text-align: center;
+      font-size: 23px;
+      letter-spacing: 2px;
+      margin: 35px 0;
+    }
+
+    .audio {
+      display: block;
+      margin: 45px auto;
+      padding: 18px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .nota {
+      border-top: 1px solid #ccc;
+      margin-top: 55px;
+      padding-top: 25px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      margin-top: 70px;
+      padding: 30px 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .cabecera {
+        padding: 20px;
+      }
+
+      .contenedor {
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .contenido {
+        font-size: 18px;
+      }
+
+      .contenido h2 {
+        font-size: 26px;
+      }
+
+      .subtitulo {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <a class="marca" href="../index.html">Venezuela Memorable</a>
+    <a class="volver" href="../index.html">← Volver a la revista</a>
+  </header>
+
+  <main class="contenedor">
+
+    <div class="categoria">Folklore · Tradiciones venezolanas</div>
+
+    <h1>El Silbón como leyenda de corrección social</h1>
+
+    <p class="subtitulo">Una historia del llano profundo</p>
+
+    <div class="firma">Valeria Naveda</div>
+    <div class="fecha">30 de julio de 2026</div>
+
+    <figure>
+      <img
+        src="https://substack-post-media.s3.amazonaws.com/public/images/1049d2dc-dd1e-4847-b72f-347d2b7e218f_1536x1024.png"
+        alt="Representación ilustrada de El Silbón en el paisaje llanero venezolano"
+      >
+      <figcaption>
+        El Silbón se ha convertido en una de las leyendas venezolanas
+        más difundidas gracias a la radio y la televisión.
+      </figcaption>
+    </figure>
+
+    <article class="contenido">
+
+      <p>
+        Los mitos y el folklore vienen a ser un reflejo del ideario nacional.
+        Detrás de los cuentos, las canciones y las melodías, suele haber mucho
+        más que simples historias. Detrás, el inconsciente juega un papel
+        crucial y termina por alimentarse de las propias percepciones del
+        gentilicio. Para el psicólogo estadounidense Joseph Henderson,
+        perdura siempre en estas tradiciones un mensaje desde el punto
+        de vista psicológico:
+      </p>
+
+      <blockquote>
+        Este vínculo crucial entre mitos primitivos y los símbolos producidos
+        por el inconsciente es de inmensa importancia práctica para el
+        analista. Le permite identificar e interpretar esos símbolos en un
+        contexto que les da perspectiva histórica y también significado
+        psicológico.
+      </blockquote>
+
+      <p>
+        Detrás de cada mito, se esconden subterráneamente mensajes destinados
+        a la sociedad en la que este se desarrolla. El acervo cultural
+        venezolano se ha nutrido del paisaje llanero para acrecentar el
+        imaginario colectivo. Desde La Sayona hasta El Silbón o la aparición
+        de la Virgen María al indígena Coromoto, la sabana ha sido tierra
+        fecunda para el arraigo de leyendas. Así como William Faulkner se
+        abalanzó sobre el paisaje sureño de los Estados Unidos para ambientar
+        sus novelas, la literatura y las coplas venezolanas ha tomado como
+        referencia el misticismo característico del llano.
+      </p>
+
+      <p>
+        Aunque se desconoce a ciencia cierta el auténtico origen de esta
+        historia tan difundida, las primeras recopilaciones datan de finales
+        del siglo XIX y gracias a las innumerables maneras y presentaciones
+        en radiodifusión, su conexión para con los venezolanos está muy
+        enraizada. Desde mucho antes que Gallegos inmortalizara el paisaje
+        de esta zona con Doña Bárbara, ya existía un entroncamiento con la
+        región llanera gracias a Páez y sus lanceros. Honestamente, no se
+        puede contar a Venezuela sin el llano.
+      </p>
+
+      <p>
+        La leyenda del Silbón durante muchas décadas ha aterrorizado a los
+        Llanos de Venezuela y el oriente de Colombia. Muchos recuerdan la
+        magnífica voz que durante años narró la historia de El Silbón y Juan
+        Hilario, un relato profundamente arraigado en el folklore llanero
+        venezolano. La historia cuenta el encuentro de Juan Hilario, un hombre
+        con problemas de alcohol, terco y desobediente, que no escuchaba los
+        consejos de quienes lo rodeaban. A pesar de las advertencias, seguía
+        manteniendo comportamientos reprochables.
+      </p>
+
+      <p>
+        Es entonces cuando aparece la figura del Silbón: un ser terrorífico,
+        representado como un joven extremadamente alto y delgado, que carga
+        sobre su espalda un saco lleno de huesos. Se dice que es el espíritu
+        de un joven condenado a vagar eternamente por las sabanas durante
+        altas horas de la noche, asustando a quienes él cree merecedores de
+        una lección, como hombres borrachos, violadores, ladrones o cualquiera
+        que esté vagando fuera de casa a esas horas.
+      </p>
+
+      <p>
+        El Silbón es visto por muchos como un espíritu vengativo, pero también
+        como una figura que castiga y corrige a las personas del llano que
+        mantienen malos comportamientos. La leyenda funciona como una
+        enseñanza sobre cómo debían comportarse las personas si no querían
+        encontrarse con él en la madrugada.
+      </p>
+
+      <p>
+        Aun así, muchas personas que aseguran haberse portado bien cuentan
+        haber tenido encuentros lejanos con él, especialmente al escuchar
+        su característico silbido, reconocible incluso a grandes distancias.
+      </p>
+
+      <p>
+        Dicen que aparece de noche, muy alto, flaco, con sombrero llanero y
+        un saco de huesos al hombro. Pero lo peor es su silbido, que en
+        términos musicales suena así:
+      </p>
+
+      <div class="silbido">
+        Do... Re... Mi... Fa... Sol... Fa... Mi... Re...
+      </div>
+
+      <p>
+        Y los abuelos dicen: si escuchas el silbido cerca, en realidad está
+        lejos. Si lo escuchas lejos, ya lo tienes al lado.
+      </p>
+
+      <p>
+        Quizás sea porque este territorio fue antes una sola nación, en las
+        sabanas abiertas de Venezuela y Colombia, los sonidos viajan a enormes
+        distancias durante la noche. Los silbidos de campesinos, arrieros o
+        llaneros pueden escucharse deformados por el viento y la oscuridad,
+        creando una sensación extraña y difícil de explicar.
+      </p>
+
+      <p>
+        A quienes puede interesar profundizar más y conocer el tema, dejo el
+        enlace para que puedan escuchar una de las versiones más conocidas
+        de esta leyenda, narrada por Dámaso Delgado, hijo ilustre de Guanarito:
+      </p>
+
+      <div class="audio">
+        ESCUCHA AHORA · 20:11
+        <p style="font-size:12px; color:#777; letter-spacing:0;">
+          El enlace directo al audio debe añadirse aquí.
+        </p>
+      </div>
+
+    </article>
+
+    <div class="nota">
+      <p>
+        <strong>Nota bibliográfica</strong>
+      </p>
+      <p>
+        1. Joseph L. Henderson, «Los mitos antiguos y el hombre moderno»,
+        en <em>El hombre y sus símbolos</em>, concebido y editado por
+        Carl G. Jung, trad. Luis Escolar Bareño (Barcelona: Paidós, 1995),
+        p. 109.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    VENEZUELA MEMORABLE · HISTORIA, CULTURA Y PATRIMONIO
+  </footer>
+
+</body>
+</html>
